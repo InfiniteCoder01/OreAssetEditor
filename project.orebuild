@@ -1,0 +1,12 @@
+include "src";
+files "src/**.cpp";
+watch "src/**.h src/**.hpp";
+output "OreAssetEditor.exe";
+
+library "Mova";
+library "imgui";
+library "nativefiledialog";
+library "nvwa";
+
+flags "-O3 -lgdi32 -lopengl32 -D WIN32_LEAN_AND_MEAN";
+flags "-lole32 -luuid";
